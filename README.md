@@ -163,5 +163,5 @@ Ce portfolio est est sous licence MIT.
 
 ---
 
-**root@NyxOff.cyber** ~ System Online ● Développé avec ❤️ et <code/>
+**Nyx-Off** ~ System Online ● Développé avec ❤️ et <code/>
 
