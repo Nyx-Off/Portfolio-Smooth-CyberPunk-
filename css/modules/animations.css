@@ -1,0 +1,87 @@
+/* ===================================
+   ANIMATIONS
+   =================================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Glitch Effect (subtle) */
+.glitch {
+    position: relative;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.glitch:hover::before {
+    animation: glitch-1 0.3s infinite;
+    color: var(--color-green);
+    opacity: 0.8;
+}
+
+.glitch:hover::after {
+    animation: glitch-2 0.3s infinite;
+    color: var(--color-purple);
+    opacity: 0.8;
+}
+
+@keyframes glitch-1 {
+    0%, 100% {
+        transform: translate(0);
+    }
+    33% {
+        transform: translate(-2px, 2px);
+    }
+    66% {
+        transform: translate(2px, -2px);
+    }
+}
+
+@keyframes glitch-2 {
+    0%, 100% {
+        transform: translate(0);
+    }
+    33% {
+        transform: translate(2px, -2px);
+    }
+    66% {
+        transform: translate(-2px, 2px);
+    }
+}
+
+/* Smooth Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--color-green), var(--color-purple));
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-green);
+}

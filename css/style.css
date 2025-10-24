@@ -1,0 +1,33 @@
+/**
+ * Portfolio Cyberpunk - Main Stylesheet
+ * Maxime Gille - Étudiant en Cybersécurité
+ * 
+ * Organisation modulaire pour une meilleure maintenabilité
+ */
+
+/* Base */
+@import url('modules/variables.css');
+@import url('modules/reset.css');
+@import url('modules/backgrounds.css');
+
+/* Layout */
+@import url('modules/layout.css');
+
+/* Components */
+@import url('modules/navigation.css');
+@import url('modules/buttons.css');
+
+/* Sections */
+@import url('modules/hero.css');
+@import url('modules/about.css');
+@import url('modules/skills.css');
+@import url('modules/projects.css');
+@import url('modules/diplomas.css');
+@import url('modules/contact.css');
+@import url('modules/footer.css');
+
+/* Effects */
+@import url('modules/animations.css');
+
+/* Responsive */
+@import url('modules/responsive.css');

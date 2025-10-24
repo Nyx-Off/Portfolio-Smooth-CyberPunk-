@@ -1,0 +1,36 @@
+/* ===================================
+   BACKGROUND EFFECTS
+   =================================== */
+.grid-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(0, 255, 136, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 136, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.gradient-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle at 20% 50%,
+        rgba(168, 85, 247, 0.05) 0%,
+        transparent 50%
+    ),
+    radial-gradient(
+        circle at 80% 50%,
+        rgba(0, 255, 136, 0.05) 0%,
+        transparent 50%
+    );
+    pointer-events: none;
+    z-index: 0;
+}

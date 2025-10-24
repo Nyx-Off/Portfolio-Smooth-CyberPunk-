@@ -1,0 +1,31 @@
+/* ===================================
+   FOOTER
+   =================================== */
+.footer {
+    background: rgba(17, 17, 17, 0.6);
+    border-top: 1px solid rgba(0, 255, 136, 0.1);
+    padding: var(--spacing-md) 0;
+    margin-top: var(--spacing-xl);
+}
+
+.footer-content {
+    text-align: center;
+    color: var(--color-text-secondary);
+}
+
+.footer-content p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-tagline {
+    font-size: 0.9rem;
+}
+
+.heart {
+    color: #ff0055;
+}
+
+.code {
+    color: var(--color-green);
+    font-family: monospace;
+}
